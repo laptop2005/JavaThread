@@ -13,11 +13,11 @@ public class Test_01_Thread_Basic extends Thread{
 	public void run(){
 		for(int inx=0;inx<=10;inx++){
 			System.out.println(getName()+":"+inx);
-			try {
-				Thread.sleep(1000);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
+//			try {
+//				Thread.sleep(1000);
+//			} catch (InterruptedException e) {
+//				e.printStackTrace();
+//			}
 		}
 	}
 	
@@ -26,13 +26,13 @@ public class Test_01_Thread_Basic extends Thread{
 		Test_01_Thread_Basic thread2 = new Test_01_Thread_Basic();
 		Test_01_Thread_Basic thread3 = new Test_01_Thread_Basic();	
 		
-		thread1.noThread();
-		thread2.noThread();
-		thread3.noThread();
+//		thread1.noThread();
+//		thread2.noThread();
+//		thread3.noThread();
 		
-//		thread1.start();
-//		thread2.start();
-//		thread3.start();
+		thread1.start();
+		thread2.start();
+		thread3.start();
 		
 		
 	}
