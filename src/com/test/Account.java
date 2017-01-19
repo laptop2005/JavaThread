@@ -6,8 +6,8 @@ public class Account{
 	static int balance = 10000;
 	
 	//출금
-	public static synchronized void withdraw(String name,int amt){
-//	public static void withdraw(String name,int amt){
+//	public static synchronized void withdraw(String name,int amt){
+	public static void withdraw(String name,int amt){
 		String success = "";
 		int prevBalance = balance;
 		//남은 잔고가 출금할 금액보다 크거나 같으면 출금한다
